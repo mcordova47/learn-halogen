@@ -1,0 +1,25 @@
+{
+  "name": "learn-halogen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "spago build && http-server -c-1",
+    "test": "spago test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcordova47/learn-halogen.git"
+  },
+  "author": "Marc Cordova <mcordova47@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcordova47/learn-halogen/issues"
+  },
+  "homepage": "https://github.com/mcordova47/learn-halogen#readme",
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "purescript": "^0.15.0",
+    "spago": "^0.20.9"
+  }
+}
