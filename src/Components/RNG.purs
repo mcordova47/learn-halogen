@@ -1,4 +1,7 @@
-module RNG where
+module Components.RNG
+  ( component
+  )
+  where
 
 import Prelude
 

@@ -5,12 +5,12 @@ module Main
 
 import Prelude
 
+import Components.HTTPRequests (component)
 import Effect (Effect)
 import Halogen.Aff as HA
 import Halogen.VDom.Driver (runUI)
-import RNG as RNG
 
 main :: Effect Unit
 main = HA.runHalogenAff do
   body <- HA.awaitBody
-  runUI RNG.component unit body
+  runUI component unit body

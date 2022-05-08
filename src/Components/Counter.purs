@@ -1,4 +1,4 @@
-module Counter
+module Components.Counter
   ( component
   )
   where
