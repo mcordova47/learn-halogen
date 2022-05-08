@@ -3,7 +3,7 @@ module RNG where
 import Prelude
 
 import Data.Maybe (Maybe(..), maybe)
-import Effect.Class (class MonadEffect)
+import Effect.Class (class MonadEffect, liftEffect)
 import Effect.Random (random)
 import Halogen as H
 import Halogen.HTML as HH
@@ -40,5 +40,5 @@ render state = do
 handleAction :: forall output m. MonadEffect m => Action -> H.HalogenM State Action () output m Unit
 handleAction = case _ of
   Regenerate -> do
-    newNumber <- H.liftEffect random
+    newNumber <- liftEffect random
     H.modify_ \_ -> Just newNumber
