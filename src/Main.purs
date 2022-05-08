@@ -5,7 +5,7 @@ module Main
 
 import Prelude
 
-import Components.HTTPRequests (component)
+import Components.RNG (component)
 import Effect (Effect)
 import Halogen.Aff as HA
 import Halogen.VDom.Driver (runUI)
